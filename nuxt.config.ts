@@ -6,14 +6,15 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/image',
     'nuxt-swiper',
-    // '@yeerlo/nuxt'
+    '@yeerlo/nuxt',
+    '@pinia-plugin-persistedstate/nuxt'
   ],
   css:[
     '~/assets/css/app.css',
   ],
   colorMode:{
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'dark', // fallback value if not system preference found
+    preference: 'light', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
     hid: 'nuxt-color-mode-script',
     globalName: '__NUXT_COLOR_MODE__',
     componentName: 'ColorScheme',
@@ -48,23 +49,19 @@ export default defineNuxtConfig({
         siteTitle: "Yeerlo Personal - Home",
         siteDescription: "Yeerlo Personal  landing page website.",
         footerText: "Elevate Your Experience - Where Every Event Becomes Unforgettable",
-        socialLinks: {
-          facebook: "#facebook",
-          twitter: "#tweet",
-          instagram: "#insta",
-          youtube: "#youtube",
-          tiktok: "#tiktok"
-        },
+
         siteHero:{
           Header: "Electrify Your Night: An Unforgettable Journey with MC Yeerlo",
           Paragraph: "Join me for a night of electrifying beats and unforgettable moments. Dive into a world where comedy, music and magic meet. Get ready for an experience that will set your heart racing!",
           imgOne: "/images/sidebiew.webp",
           imgTwo: "/images/sidebiew.webp"
         },
+
         siteColor: {
           background: "#f37e01",
           textcolor: "white"
         },
+        
         subscribeText: {
           head: "Subscribe  to recieve updates on my upcoming events",
           color: "#f37e01",

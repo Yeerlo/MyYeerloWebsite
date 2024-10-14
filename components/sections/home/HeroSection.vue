@@ -32,13 +32,10 @@
                     </p>
 
                     <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
-                        <AtomsLinkBtn href="#events"   class="w-full sm:w-max flex text-white justify-center bg-primary" :style="{ backgroundColor: siteColor.background }">
+                        <AtomsLinkBtn href="#events" variant="none"  class="w-full sm:w-max flex text-white justify-center bg-primary" :style="{ backgroundColor: siteColor.background }">
                             Explore Events
                         </AtomsLinkBtn>
-
-
                     </div>
-
                 </div>
                 <div class="lg:h-full  hidden md:flex">
 

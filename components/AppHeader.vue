@@ -1,9 +1,3 @@
-<script  setup>
-// Access props directly
-const { siteLogo, siteColor } = defineProps(['siteLogo', 'siteColor']);
-
-
-</script>
 <template>
     <header class="absolute inset-x-0 top-0 py-3 z-50">
         <AtomsContainer class-name="relative">
@@ -19,10 +13,10 @@ const { siteLogo, siteColor } = defineProps(['siteLogo', 'siteColor']);
                 </div>
 
                 <div class="flex items-center bg-inherit gap-1 lg:gap-3 min-w-max">
-                    <ElementsThemeSwitcher />
+                    <!-- <ElementsThemeSwitcher /> -->
                     <div class="hidden lg:flex lg:items-center gap-4">
 
-                        <AtomsLinkBtn href="#events" class="text-white bg-primary"
+                        <AtomsLinkBtn href="#events" variant="none" class="text-white bg-primary"
                             :style="{ backgroundColor: siteColor.background }">
                             Explore Events
                         </AtomsLinkBtn>
@@ -33,3 +27,7 @@ const { siteLogo, siteColor } = defineProps(['siteLogo', 'siteColor']);
         </AtomsContainer>
     </header>
 </template>
+
+<script setup>
+const { siteLogo, siteColor } = defineProps(['siteLogo', 'siteColor']);
+</script>
