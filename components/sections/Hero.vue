@@ -37,7 +37,7 @@
                         </AtomsLinkBtn>
                     </div>
                 </div>
-                <div class="lg:h-full  hidden md:flex">
+                <div class="lg:h-full  hidden md:flex" style="backdrop-filter: blur(5px);">
 
                     <div class="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full lg:h-full items-center relative">
                         <div

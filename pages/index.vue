@@ -4,7 +4,7 @@
       :siteLogo="siteSettings.logo" 
       :siteColor="{ background: siteSettings.siteColor, textcolor: 'white' }"
     />
-    <SectionsHomeHeroSection
+    <SectionsHero
       :siteHero="{
         Header: creatorInfo?.name,
         Paragraph: creatorInfo?.bio,
@@ -20,7 +20,6 @@
       </ClientOnly>
     </div>
 
-    <!-- <SectionsCallToAction :subscribeText="siteSettings.subscribeText" />  -->
     <AppFooter :siteSettings="siteSettings" :siteColor="siteSettings.siteColor" />
   </div>
 </template>
@@ -39,13 +38,9 @@ const localEvents = ref([]);
 
 // Function to fetch creator info
 const getCreatorInfo = async () => {
-  try {
-    const result = await getCreator_(creatorId);
-    if(result.id){
-      pinia.setCreatorInformation(result);
-    }
-  } catch (error) {
-    console.error('Error fetching creator:', error);
+  const result = await getCreator_(creatorId);
+  if(result.id){
+    pinia.setCreatorInformation(result);
   }
 };
 
@@ -84,33 +79,3 @@ onMounted(()=>{
   getLocalEvents()
 });
 </script>
-
-<style>
-.nuxt-yeerlo-wrapper .yrl-card {
-  min-width: 300px !important;
-  max-width: 335px !important;
-  max-height: 370px !important;
-}
-
-.nuxt-yeerlo-wrapper .yrl-card-footer {
-  margin-top: 0rem !important;
-}
-
-.yrl-modalBody .yrl-modal {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 40%;
-  background-color: var(--y-white);
-  border-radius: 10px;
-  z-index: 10;
-  min-height: 460px !important;
-}
-
-.yrl-infoContent .yrl-Tab2-2 {
-  width: 93% !important;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-</style>

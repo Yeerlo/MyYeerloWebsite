@@ -3,12 +3,12 @@ let apiURL = "https://api.yeerlo.com";
 const queryResult = `
 id,
 image{
-    url,
-    dominantColor,
+  url,
+  dominantColor,
 },
 backgroundImage{
-    url,
-    dominantColor
+  url,
+  dominantColor
 },
 name,
 username,
@@ -17,8 +17,8 @@ country,
 verifiedBadge,
 phoneNumber,
 socialMedia{
-    social,
-    url
+  social,
+  url
 },
 totalFollowers,
 totalFollowing,
@@ -33,9 +33,7 @@ export const getCreator_ = async (creatorId) => {
       }
     }`
   };
-
   const result = await asyncRequest(apiURL, { method: 'POST', body: JSON.stringify(query) });
-  
   return handleGQLResponse(result, "getCreator", true);
 };
 
@@ -44,21 +42,20 @@ export const handleGQLResponse = (response, operation, silent = false) => {
     const message = response.error_msg || response.errors[0]?.extensions?.reason || response.errors[0]?.message;
     
     if (!silent) {
-      showNotification({ message, success: false });
+      alert(message);
     }
-    return null;
+    return;
   }
-
   return response?.data[operation];
 };
 
 export const asyncRequest = async (url, options, json = true) => {
   return await fetch(url, options)
-    .then((response) => (json ? response.json() : response.text()))
-    .then((data) => {
-      return data;
-    })
-    .catch((e) => {
-      return { error_msg: `Server/Network Error: ${e.message}` };
-    });
+  .then((response) => (json ? response.json() : response.text()))
+  .then((data) => {
+    return data;
+  })
+  .catch((e) => {
+    return { error_msg: `Server/Network Error: ${e.message}` };
+  });
 };

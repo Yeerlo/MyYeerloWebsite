@@ -1,5 +1,5 @@
 <template>
-    <header class="absolute inset-x-0 top-0 py-3 z-50">
+    <header class="absolute inset-x-0 top-0 py-3 z-1">
         <AtomsContainer class-name="relative">
             <nav class="flex items-center justify-between w-full relative">
                 <!-- app logo -->
@@ -12,7 +12,7 @@
                     </NuxtLink>
                 </div>
 
-                <div class="flex items-center bg-inherit gap-1 lg:gap-3 min-w-max">
+                <div class="flex items-center bg-inherit gap-1 lg:gap-3 min-w-max" style="backdrop-filter: blur(5px);">
                     <!-- <ElementsThemeSwitcher /> -->
                     <div class="hidden lg:flex lg:items-center gap-4">
 
