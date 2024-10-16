@@ -1,75 +1,27 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# How To Get Started
 
 ## Setup
 
-Make sure to install the dependencies:
+To get started, you would need your Yeerlo **CreatorID** which can be gotten from your Yeerlo creator dashboard at https://app.yeerlo.com. This is required to ensure only your events and personal information are properly displayed.
 
-```bash
-# npm
-npm install
+### How To Update Your CreatorID
 
-# pnpm
-pnpm install
+1. Navigate to your `nuxt.config.ts` file.  
+2. In the `runtimeConfig` section, locate the **CreatorID**.  
+3. Replace the default CreatorID value with **your own CreatorID**.  
+4. Save the file to apply the changes.
 
-# yarn
-yarn install
+Hint: your **CreatorID** can be gotten from your Yeerlo dashboard profile as shown in the image preview below:
 
-# bun
-bun install
-```
+<p align="center">
+  <img src="https://storage.yeerlo.com/dashboard_profile.png" alt="Dashboard Profile" width="400">
+</p>
 
-## Development Server
+### Further Customizations
 
-Start the development server on `http://localhost:3000`:
+For additional customizations, please explore the `siteSettings` under the `runtimeConfig` section to modify the following:  
+- **Logo**  
+- **Favicon**  
+- **Site color**
+etc.
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

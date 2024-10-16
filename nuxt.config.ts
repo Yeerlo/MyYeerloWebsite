@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         },
         favicon: "https://storage.yeerlo.com/logos/Asset%2020.png",
         siteTitle: "Yeerlo Personal - Home",
-        siteDescription: "Yeerlo Personal  landing page website.",
+        siteDescription: "Yeerlo Personal landing page website.",
         footerText: "Elevate Your Experience - Where Every Event Becomes Unforgettable",
         siteColor: {
           background: "#f37e01",
