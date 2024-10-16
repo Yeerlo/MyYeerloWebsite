@@ -82,6 +82,7 @@
     justify-content: normal; 
     position: fixed;
     border-radius: 0px !important;
+    height: auto !important;
   }
 
   .yrl-Tab2-2 {
