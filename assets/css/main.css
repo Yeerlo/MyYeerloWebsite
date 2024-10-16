@@ -93,11 +93,8 @@
     min-width: 345px !important;
   
   }
-
-  @media only screen and (max-width: 450px) {
-    .yrl-icon-button {
-        font-size: inherit !important;
-    }
-}
-
+  .yrl-icon-button svg{
+    height: 24px !important;
+    width: 24px !important;
+  }
 }
