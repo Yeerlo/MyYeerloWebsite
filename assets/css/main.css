@@ -97,4 +97,8 @@
     height: 24px !important;
     width: 24px !important;
   }
+
+  #yrl-numberSelect {
+    width: 55px;
+  }
 }
