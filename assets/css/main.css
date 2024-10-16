@@ -78,11 +78,15 @@
     top: 0px !important;
     justify-content: normal; 
     position: fixed;
-    
+    border-radius: 0px !important;
   }
 
   .yrl-Tab2-2 {
     bottom: 1rem !important;
     border-radius: 50rem !important;
   }
+  .nuxt-yeerlo-wrapper .yrl-card {
+    min-width: 345px !important;
+  
+}
 }

@@ -37,7 +37,7 @@ export default defineNuxtConfig({
         layoutMode: "events",
         displayFormat: "default", // one of "default", "simple"
         limit: 0, // (Optional) total number of events you want to display.
-        alwaysUseUpToDateVersions: false
+        alwaysUseUpToDateVersions: true
       },
 
       // website public config
