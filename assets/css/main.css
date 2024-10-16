@@ -76,7 +76,9 @@
 
   .yrl-modalBody .yrl-modal {
     top: 0px !important;
-    justify-content: normal;   
+    justify-content: normal; 
+    position: fixed;
+    
   }
 
   .yrl-Tab2-2 {
