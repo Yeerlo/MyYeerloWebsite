@@ -94,4 +94,10 @@
   
   }
 
+  @media only screen and (max-width: 450px) {
+    .yrl-icon-button {
+        font-size: inherit !important;
+    }
+}
+
 }
