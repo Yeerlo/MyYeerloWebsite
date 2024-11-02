@@ -41,6 +41,7 @@ const getCreatorInfo = async () => {
   const result = await getCreator_(creatorId);
   if(result.id){
     pinia.setCreatorInformation(result);
+    return result; // return result to avoid duplicating this request on client side
   }
 };
 
