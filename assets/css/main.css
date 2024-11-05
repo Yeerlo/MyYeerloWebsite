@@ -103,3 +103,9 @@
     padding-left: 10px !important;
   }
 }
+.yrl-failed-fetch svg{
+  margin: auto!important;
+}
+.yrl-retry-btn{
+  margin-bottom: 3rem!important;
+}
