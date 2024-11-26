@@ -1,4 +1,6 @@
-
+header{
+  z-index: 10000!important;
+}
 .invisible-scroll{
   scrollbar-width: none;
   -ms-overflow-style: none;
