@@ -1,5 +1,5 @@
 header{
-  z-index: 10000!important;
+  z-index: 1!important;
 }
 .invisible-scroll{
   scrollbar-width: none;
